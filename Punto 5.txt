@@ -1,0 +1,11 @@
+Punto 5
+Para asegurar el rendimiento de la base de datos es importante la implementación de estrategias como la creación 
+de vistas materializadas para consultas de grandes volúmenes de datos que requieren validación cada cierto tiempo,
+como informes o estadísticas productos de estas. Otra estrategia útil es la implementación de índices en las 
+tablas y si el volumen de datos es muy grande se puede utilizar también partición en las tablas que manejan estos datos.
+
+Para mantenerla integridad de la información optaría por la no utilización de triggers en su lugar utilizar
+procedimientos almacenados y/o tareas programadas que cumplan con las mismas características, esto por facilidad
+de uso, control y lectura para el desarrollador a cargo. Algo importante a tener en cuenta es que tómese el método
+que se quiera usar es necesario que este cuente con todas las validaciones esperadas a fin de que no genere
+conflictos de información o de procedimiento.  
